@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => {
+router.get('/', (_req, res) => {
   // Simulamos un pequeño procesamiento para medir latencia real
   const start = process.hrtime.bigint();
-  const processingTime = Math.random() * 2; // ms de procesamiento aleatorio
   
   // Pequeña operación para consumir tiempo
   let result = 0;
