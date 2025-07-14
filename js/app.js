@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Crear instancia del speedtest
   const speedTest = new SpeedTest({
+    serverUrl: 'http://192.168.1.154:3000',
     pingIterations: 5,
     downloadSize: 20, // MB
     uploadSize: 10    // MB
